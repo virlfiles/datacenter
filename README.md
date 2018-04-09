@@ -24,5 +24,5 @@ virl up virlfiles/datacenter
 ```
 
 If you are launching your simulation by some other means, you will want
-to download the topology.virl file, and import modify it by changing the
+to download the topology.virl file, and modify it by changing the
 `{{ gateway }}` tags to reflect your current VIRL environment.
