@@ -2,6 +2,13 @@
 
 A classic data center design with core/distribution/access layer
 
+The following device types are used for this topology:
+
+* Branch Router - IOS-XE
+* WAN - IOS-XR
+* Core Layer - IOS-XR
+* Distribution Layer - NX-OS
+* Access Layer - NX-OS
 ## Topology
 
 ![Alt Text](./topology.png)
