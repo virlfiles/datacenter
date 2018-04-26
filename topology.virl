@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <topology xmlns="http://www.cisco.com/VIRL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="0.95" xsi:schemaLocation="http://www.cisco.com/VIRL https://raw.github.com/CiscoVIRL/schema/v0.95/virl.xsd">
     <extensions>
+        <entry key="management_lxc" type="Boolean">false</entry>  
         <entry key="management_network" type="String">flat</entry>
     </extensions>
     <node name="core1" type="SIMPLE" subtype="IOS XRv 9000" location="430,300" vmFlavor="IOS XRv 9000">
@@ -131,7 +132,8 @@ end</entry>
             <entry key="config" type="string">! NX-OSv Config generated on 2017-12-15 12:31
 license grace-period
 !
-hostname agg3
+feature telnet
+hostname dist3
 
 username admin password 5 $1$KuOSBsvW$Cy0TSD..gEBGBPjzpDgf51 role network-admin
 username cisco password 5 $1$Nk7ZkwH0$fyiRmMMfIheqE3BqvcL0C1 role network-operator
@@ -164,7 +166,8 @@ interface mgmt0
             <entry key="config" type="string">
 license grace-period
 !
-hostname agg4
+feature telnet
+hostname dist4
 username admin password 5 $1$KuOSBsvW$Cy0TSD..gEBGBPjzpDgf51 role network-admin
 username cisco password 5 $1$Nk7ZkwH0$fyiRmMMfIheqE3BqvcL0C1 role network-operator
 username cisco role network-admin
@@ -194,7 +197,8 @@ interface mgmt0
             <entry key="config" type="string">
 license grace-period
 !
-hostname leaf5
+feature telnet
+hostname access5
 username admin password 5 $1$KuOSBsvW$Cy0TSD..gEBGBPjzpDgf51 role network-admin
 username cisco password 5 $1$Nk7ZkwH0$fyiRmMMfIheqE3BqvcL0C1 role network-operator
 username cisco role network-admin
@@ -231,7 +235,8 @@ interface mgmt0
             <entry key="config" type="string">
 license grace-period
 !
-hostname leaf6
+feature telnet
+hostname access6
 username admin password 5 $1$KuOSBsvW$Cy0TSD..gEBGBPjzpDgf51 role network-admin
 username cisco password 5 $1$Nk7ZkwH0$fyiRmMMfIheqE3BqvcL0C1 role network-operator
 username cisco role network-admin
